@@ -35,6 +35,7 @@ $ npm run ts-build
 
 - Typescript 3
 - TSLint with Microsoft rules
+- Jest and Enzyme support,
 - Simple example of TypeScript code
 - .editorconfig for consistent file format
 

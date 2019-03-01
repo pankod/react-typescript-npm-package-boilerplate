@@ -1,0 +1,75 @@
+{
+  "name": "react-npm-package-boilerplate",
+  "version": "1.0.1",
+  "description": "react,react native and jsx npm package generator with typescript",
+  "scripts": {
+    "ts-build": "rm -rf ./dist/** && tsc",
+    "babel-build": "rm -rf ./dist/** && babel ./src --out-dir dist --extensions '.ts,.tsx'",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release",
+    "watch": "tsc -- --watch",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pankod/react-typescript-npm-package-boilerplate"
+  },
+  "bugs": {
+    "url": "https://github.com/pankod/react-typescript-npm-package-boilerplate/issues"
+  },
+  "homepage": "https://github.com/pankod/react-typescript-npm-package-boilerplate",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "keywords": [
+    "react",
+    "react-native",
+    "npm",
+    "typescript",
+    "npm package",
+    "generator",
+    "babel",
+    "react-dom"
+  ],
+  "author": "Pankod Inc.",
+  "contributors": [
+    {
+      "name": "selcuksarikoz",
+      "email": "selcuk@pankod.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/plugin-transform-typescript": "^7.3.2",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.9",
+    "@types/react": "^16.8.5",
+    "@types/react-dom": "^16.8.2",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "jest": "^24.1.0",
+    "react-test-renderer": "^16.8.3",
+    "semantic-release": "^15.13.3",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.13.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.3.3333"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "react-native": "*"
+  }
+}
