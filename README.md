@@ -29,3 +29,29 @@ $ npm run ts-build
 - TSLint with Microsoft rules
 - a simple example of TypeScript code,
 - .editorconfig for consistent file format.
+
+If you develop React for web, change the lines on package.json
+```json
+"devDependencies:{
+  "@types/react": "^16.8.5", // or @latest
+  "@types/react-dom": "^16.8.2", // or @latest
+},
+
+"peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+}
+```
+
+or for development environment for react-native
+```json
+"devDependencies:{
+  "@types/react": "^16.8.5", // or @latest
+  "@types/react-native": "^16.8.2", // or @latest
+},
+
+"peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+}
+```
