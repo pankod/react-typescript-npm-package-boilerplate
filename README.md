@@ -1,31 +1,67 @@
-### React and React Native npm package boilerplate with typescript support
+## React and React Native npm package boilerplate with Typescript support
 ----
 
-#### Quick start
-This project is intended to be used with the latest Active LTS release of [Node.js][nodejs]. To start, just clone the repository with following commands:
+### About
+This boilerplate make it easier to create npm package from Typescript projects.
+
+The project is intended to be used with the latest Active LTS release of [Node.js][nodejs]. 
+
+
+### Getting Started
+
+To start, just clone the repository with following commands:
 
 ```sh
 git clone https://github.com/pankod/react-typescript-npm-package-boilerplate
+
 cd react-typescript-npm-package-boilerplate
+
 npm install
 ```
 
-or download and unzip current `master` branch:
+ **Then run the following commands for:**
 
-#### and run...
-
-for babel build : 
+ **Babel build** : 
 ```sh 
 $ npm run babel-build
 ```
 
-for typescript build : 
+ **Typescript build** : 
 ```sh 
 $ npm run ts-build
 ```
 
-#### What's included
-- Typescript 3,
+#### This boilerplate includes:
+
+- Typescript 3
 - TSLint with Microsoft rules
-- a simple example of TypeScript code,
-- .editorconfig for consistent file format.
+- Simple example of TypeScript code
+- .editorconfig for consistent file format
+
+**You should change the lines on package.json:**
+
+If you develop React for web:
+
+```json
+"devDependencies:{
+  "@types/react": "^16.8.5", // or @latest
+  "@types/react-dom": "^16.8.2", // or @latest
+},
+
+"peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+}
+```
+or React-Native development environment 
+```json
+"devDependencies:{
+  "@types/react": "^16.8.5", // or @latest
+  "@types/react-native": "^16.8.2", // or @latest
+},
+
+"peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+}
+```
